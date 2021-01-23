@@ -1,0 +1,67 @@
+
+nav { 
+background-color: black;
+color: white
+}
+
+.menu{ 
+  display: flex; 
+  align-items: center; 
+}
+
+.menu li{
+    width: 10%;
+    list-style: none;
+}
+
+.menu a {
+    color: blue;
+    font-family:"indie flower", cursive;
+    text-decoration: none;
+    }
+
+    .menu a:hover{
+        background-color: beige;
+        border: 5px blue solid;
+        border-radius: 3px;
+        color:  black
+    }
+
+    .logo{
+    flex-grow: 3;   
+    }
+
+    .logo img{
+        width: 10%;
+        padding:1% 2% 1% 5%;
+    }
+
+
+    /* menu desplegable*/
+
+    #menu ul li{
+        margin: 0;
+        padding: 0;
+        float:left;
+        position: relative
+    }
+
+    #menu ul ul{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: black;
+        padding: 0;
+        display: none;
+         }
+
+    #menu ul li:hover > ul {
+       display: block
+     }
+
+#menu ul ul li{
+    float:none;
+    margin-top: 10px;
+    width: 150px
+}
+        

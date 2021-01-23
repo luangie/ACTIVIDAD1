@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ACTIVIDAD</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./CSS/estilo.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./CSS/menu.css'>
+    <!--<script src='main.js'></script>-->
+  </head>
+  <body>
+       <!--Inicia nuestro meu de la pagina-->
+        <nav>
+          <ul class="menu">
+               <li class="logo">
+                   <a href="#"> 
+                        <!--imagen del logo-->
+                        <img src="./Img/logo 2.png">
+                    </a>  
+                </li>
+                <li> <a href="./index.html">Inicio</a>  </li>
+                <li><a href="./contactenos.html">Contactenos</a>  </li>
+            </ul>
+        </nav>
+ 
+   <div class="container">
+       <h1> Personajes de Risk and Morty </h1>
+      
+      <!-- inicia formulario-->
+       <div>
+           <form >
+                <div class=".section-flex">
+                   <div class="elemnt-form"> 
+                        <div class="label">
+                            <label for="type">tipo de mensaje </label>  
+                          </div>
+                          <select id="type" name="type" required>
+                          <option value=""> selecione una opcion</option>
+                          <option value="Cotizacion"> Cotizacion</option>
+                          <option value="Saludo"> Saludo</option>
+                          <option value="Queja"> Queja</option>
+                          </select>
+                           </div>
+                    
+                    <div class="elemnt-form">
+                        <div class="label">
+                            <label for="name">Nombres </label>  
+                          </div>
+                           <input type="tex" id="name" name="name" placeholder="ingrese sus nombres"required>
+                            </div>
+                            
+                            <div class="elemnt-form">
+                                <div class="label">
+                              <label for="email">email</label>
+                                </div>
+                                <input type="text"id="email" name="email"placeholder="example@correo.com"required>
+                             </div>
+
+                    <div class="elemnt-form">
+                       <div class="label">   
+                        <label for="celular">celular</label>
+                    </div>
+                     <input type="text"id="celular" name="celular" placeholder="ingrese su celular"required>
+                                </div>
+  
+                    <div class="elemnt-form">
+                        <div class="label">
+                    <label for="comment">comentario</label>
+                     </div>
+        
+        <textarea id="comment"name="comment" placeholder="ingrese su comentario">
+        </textarea required>
+        </div>
+
+        <div class="elemnt-form">
+        <div>
+        
+        <label>¿ Que estudias?</label>
+        </div>
+        <input type="checkbox"id= "chk1" name="chk1" value="html">HML
+
+        <input type="checkbox"id= "chk2" name="chk2" value="css">CSS
+        
+        <input type="checkbox"id= "chk3" name="chk3" value="php">PHP
+    </div>
+        <div class="elemnt-form">
+        <div>
+                <label> ¿Que estudias? </label>
+            </div> 
+            <input type="radio" name="radi" id="Radios1" value="html"> HML
+            <input type="radio" name="radi" id="Radios2" value="css"> CSS
+            <input type="radio" name="radi" id="Radios3" value="php"> PHP
+        </div>
+
+        <div class="btn-div">
+                            <button type="submit"> Enviar Datos </button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <footer>
+            <p> Creado Por angelica </p>
+        </footer>
+        
+    </body>
+</html>
