@@ -7,7 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./CSS/estilo.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./CSS/menu.css'>
-    <!--<script src='main.js'></script>-->
+ 
   </head>
   <body>
        <!--Inicia nuestro meu de la pagina-->
@@ -29,39 +29,39 @@
       
       <!-- inicia formulario-->
        <div>
-           <form >
-                <div class=".section-flex">
+           <form  method="post">
+                <div class="section-flex">
                    <div class="elemnt-form"> 
                         <div class="label">
                             <label for="type">tipo de mensaje </label>  
-                          </div>
-                          <select id="type" name="type" required>
-                          <option value=""> selecione una opcion</option>
-                          <option value="Cotizacion"> Cotizacion</option>
-                          <option value="Saludo"> Saludo</option>
-                          <option value="Queja"> Queja</option>
-                          </select>
-                           </div>
+                        </div>
+                             <select id="type" name="type">
+                                <option value=""> selecione una opcion</option>
+                                <option value="Cotizacion"> Cotizacion</option>
+                                <option value="Saludo"> Saludo</option>
+                                <option value="Queja"> Queja</option>
+                            </select>
+                        </div>
                     
-                    <div class="elemnt-form">
+                        <div class="elemnt-form">
                         <div class="label">
-                            <label for="name">Nombres </label>  
-                          </div>
-                           <input type="tex" id="name" name="name" placeholder="ingrese sus nombres"required>
-                            </div>
+                             <label for="name">Nombres </label>  
+                        </div>
+                                <input type="text" id="name" name="name" placeholder="ingrese sus nombres">
+                        </div>
                             
                             <div class="elemnt-form">
                                 <div class="label">
                               <label for="email">email</label>
                                 </div>
-                                <input type="text"id="email" name="email"placeholder="example@correo.com"required>
+                                <input type="text"id="email" name="email"placeholder="example@correo.com">
                              </div>
 
                     <div class="elemnt-form">
                        <div class="label">   
                         <label for="celular">celular</label>
                     </div>
-                     <input type="text"id="celular" name="celular" placeholder="ingrese su celular"required>
+                     <input type="text"id="celular" name="celular" placeholder="ingrese su celular">
                                 </div>
   
                     <div class="elemnt-form">
@@ -70,7 +70,7 @@
                      </div>
         
         <textarea id="comment"name="comment" placeholder="ingrese su comentario">
-        </textarea required>
+        </textarea >
         </div>
 
         <div class="elemnt-form">
@@ -93,9 +93,9 @@
             <input type="radio" name="radi" id="Radios3" value="php"> PHP
         </div>
 
-        <!--hola-->
+         <!-- ingreso onclick y validacion de campo-->
         <div class="btn-div">
-                            <button type="submit"> Enviar Datos </button>
+            <button type="submit" onclick="validacioncampos()"> Enviar Datos </button>
                         </div>
 
                     </div>
@@ -104,14 +104,12 @@
         </div>
         
    
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <script src='./JS/javascript.js'></script>-->
-
-
-
-        <footer>
+         <footer>
             <p> Creado Por angelica </p>
         </footer>
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="./JS/javascript.js"></script>
         
     </body>
-</html>
+</html> |
